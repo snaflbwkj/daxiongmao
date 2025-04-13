@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="熊猫初始化.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(./images/b755740017fcd0ce49a4e546e34fc3e5.jpg);
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        button,
+        input {
+            border: 0;
+            outline: none;
+        }
+
+        .nav {
+            margin: 0 auto;
+            margin-top: 170px;
+            width: 915px;
+            height: 400px;
+            background-color: rgb(179, 208, 136);
+            border: 6px solid rgb(89, 104, 66);
+            position: relative;
+        }
+
+        .nav1,
+        .nav2,
+        .nav3 {
+            float: left;
+            height: 100%;
+            width: 20%;
+            padding-top: 5px;
+        }
+
+        h3 {
+            color: rgb(33, 60, 30);
+        }
+
+        div.nav2 {
+            width: 60%;
+        }
+
+        .nav2 ul li {
+            list-style: none;
+            margin-bottom: 10px;
+            font-size: 20PX;
+        }
+
+        .nav2 ul li label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        .nav2 ul li .inp {
+            width: 242px;
+            height: 37px;
+            border: 1px solid #ccc;
+        }
+
+        .nav2 ul li .inp1 {
+            width: 150px;
+            height: 37px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            margin: 0 0 0 90px;
+            background-color: rgb(9, 9, 9);
+            color: #fbf9f9;
+        }
+
+        .nav31 {
+            float: right;
+        }
+
+        a {
+            color: rgb(65, 101, 116);
+            text-decoration: none
+        }
+
+        span {
+            padding: 0 20px;
+        }
+
+        label {
+            color: #343333;
+        }
+
+        /* 头 */
+
+        .index_dht {
+            width: 100%;
+            height: 60px;
+            background-color: #616060;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        */
+
+        /* 头板熊猫图片 */
+        .index_dht_div {
+            height: 60px;
+            line-height: 60px;
+            padding: 0 20px;
+        }
+
+        /* 头板中间搜索部分 */
+        .index_head_ssuo {}
+
+        button,
+        input {
+            border: 0;
+            outline: none;
+        }
+
+        .index_head_ssuo {
+            position: absolute;
+            top: 0;
+            left: 300px;
+            margin: 0 60px;
+        }
+
+        .dingbussuo {
+            margin-top: 14px;
+            width: 300px;
+            height: 35px;
+        }
+
+        .index_head_ssuo span img {
+            width: 30px;
+            height: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 23px;
+        }
+
+        /* 头的右边 */
+        .index_dht_divs {
+            position: absolute;
+            top: 0;
+            right: 20px;
+
+        }
+
+        .index_dht_div {
+            display: inline-block;
+            padding: 12px 15px;
+        }
+
+        .index_dht_div {
+            float: left;
+        }
+
+        /* 熊猫参观下拉的接口 */
+        .canguanxialajieko ul {
+            /* display: none; */
+            margin-top: 2px;
+            background-color: transparent;
+            z-index: 99;
+        }
+
+        .canguanxialajieko ul li {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .index_dht_div:hover {
+            background-color: #343333;
+        }
+
+        /* 正常来说隐藏的下拉 */
+        .canguanxialajieko_ydxs {
+            display: none;
+            width: 114px;
+            height: 100px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #343333
+        }
+
+        .canguanxialajieko_ydxs li a {
+            color: white;
+        }
+
+        .canguanxialajieko_ydxs li:hover {
+            background-color: white;
+
+        }
+
+        .canguanxialajieko_ydxs li a:hover {
+            color: #343333
+        }
+
+        .canguanxialajieko_ydxs li:nth-of-type(1) {
+            margin-top: 15px;
+        }
+
+        .ssuo {
+            padding: 8px 5px;
+            position: absolute;
+            top: 14px;
+            left: 302px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头 -->
+    <div class="index_dht">
+        <!-- 头的左边logo -->
+        <div class=".index_logo">
+            <img src="images/index_logo.png" alt="">
+        </div>
+        <!-- 头的中间搜索 -->
+        <div class="index_head_ssuo">
+            <form action="#" method="post" name="searchform" id="searchform">
+                <input type="text" name="dingbussuo" class="dingbussuo">
+                <input type="submit" value="搜索" class="ssuo">
+            </form>
+        </div>
+        <!-- 头的右边导航 -->
+        <div class="index_dht_divs">
+            <div class="index_dht_div">
+                <a href="index.html">首页</a>
+            </div>
+            <div class="index_dht_div canguanxialajieko">
+                <ul>
+                    <li style="list-style: none;"><a href=" javascript:void(null)">熊猫参观▼</a></li>
+                    <ul class="canguanxialajieko_ydxs">
+                        <li>
+                            <a href="movie/花花.mp4" target="_blank">花花</a>
+                        </li>
+                        <li>
+                            <a href="movie/和叶.mp4" target="_blank">和叶</a>
+                        </li>
+                        <li>
+                            <a href="movie/三太子.mp4" target="_blank">三太子</a>
+                        </li>
+                    </ul>
+                </ul>
+                <script>// 网页创意加十分
+                    var canguanxialajieko = document.querySelector('.canguanxialajieko');
+                    var canguanxialajieko_ydxs = document.querySelector('.canguanxialajieko_ydxs');
+                    canguanxialajieko.addEventListener('mouseover', function () {
+                        canguanxialajieko_ydxs.style.display = 'block';
+                    })
+                    canguanxialajieko.addEventListener('mouseout', function () {
+                        canguanxialajieko_ydxs.style.display = 'none';
+                    })
+                </script>
+            </div>
+            <div class="index_dht_div">
+                <a href="成员简介/关于我们.html">小组成员</a>
+            </div>
+            <div class="index_dht_div">
+                <a href="huiyuanzhuce.html">门票购买</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="nav">
+        <div class="nav1">
+            <h3 class="yellow">景区门票购买</h3>
+            <h3>Giant Panda Base</h3>
+        </div>
+        <div class="nav2">
+            <form action="index.html" method="post">
+                <ul>
+                    <!-- 应用表单，至少使用文本框、单选框、复选框和按钮，各项应用正常。 -->
+                    <li><label for="">姓名</label><span></span><input type="text" name="username" placeholder="请输入姓名"
+                            class="inp">
+                    </li>
+                    <!-- <li><label for="">邮箱</label><span></span><input type="email" name="email" placeholder="请输入邮箱"
+                            class="inp"></li> -->
+                    <li><label for="">手机号</label><span></span><input type="nuble" name="submit" placeholder="请输入手机号"
+                            class="inp">
+                    </li>
+                    <li><label for="">身高</label><span></span><input type="radio" name="gender" value="male"> 全票(高于1.5米)
+                        &nbsp<input type="radio" name="gender" value="female"> 半票(低于1.5米)
+                    </li>
+                    <li>
+                        <label for="">游玩服务</label><span></span><input type="checkbox" name="test"
+                            value="1">需要导游&nbsp&nbsp<input type="checkbox" name="test" value="3">需要爱心通道
+                        <!-- <input type="checkbox" name="test" value="2">半票 -->
+                    </li>
+                    <li><label for="">出生日期</label><span></span><input type="date" name="birthday" class="inp"></li>
+                    <li><label for="">短信验证码</label><span></span><input type="text" name="yzm" class="inp1"><img
+                            src="img/verify_code.jpg" alt="" placeholder="请输入短信验证码"></li>
+                    <li>
+                        <input type="submit" value="购买" class="btn">
+                    </li>
+                    <!-- 设置了买完票，跳转回主页 -->
+                </ul>
+            </form>
+        </div>
+
+        <div class="nav3">
+            <div class="nav31">
+                已购买门票,<a href="index.html" style="font-size: 16px;color: firebrick;">放我去看花花!</a>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>

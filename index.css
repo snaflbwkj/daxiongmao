@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/c2d6b480d3b8d6d3ec3d489cf8ded0d1.jpg);
+    position: relative;
+}
+
+/* 头 */
+.index_dht {
+    width: 100%;
+    height: 60px;
+    background-color: #616060;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+*/
+
+/* 头板熊猫图片 */
+.index_dht_div {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+/* 头板中间搜索部分 */
+.index_head_ssuo {}
+
+button,
+input {
+    border: 0;
+    outline: none;
+}
+
+.index_head_ssuo {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    margin: 0 60px;
+}
+
+.dingbussuo {
+    margin-top: 14px;
+    width: 300px;
+    height: 35px;
+}
+
+.index_head_ssuo span img {
+    width: 30px;
+    height: 30px;
+}
+
+.ssuo {
+    padding: 8px 5px;
+    position: absolute;
+    top: 14px;
+    left: 302px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+
+/* 头的右边 */
+.index_dht_divs {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.index_dht_div {
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.index_dht_div {
+    float: left;
+}
+
+/* 熊猫参观下拉的接口 */
+.canguanxialajieko ul {
+    /* display: none; */
+    margin-top: 2px;
+    background-color: transparent;
+    z-index: 99;
+}
+
+.canguanxialajieko ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.index_dht_div:hover {
+    background-color: #343333;
+}
+
+/* 正常来说隐藏的下拉 */
+.canguanxialajieko_ydxs {
+    display: none;
+    width: 114px;
+    height: 100px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #343333
+}
+
+.canguanxialajieko_ydxs li a {
+    color: white;
+}
+
+.canguanxialajieko_ydxs li:hover {
+    background-color: white;
+
+}
+
+.canguanxialajieko_ydxs li a:hover {
+    color: #343333;
+}
+
+.canguanxialajieko_ydxs li:nth-of-type(1) {
+    margin-top: 15px;
+}
+
+/* 身体 */
+.pageall_main {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    margin: 120px auto 0 auto;
+}
+
+.main_con {
+    width: 1000px;
+    background-color: white;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: auto;
+}
+
+.mnad_con_head .mnad_title {
+    font-size: 30px;
+}
+
+.mnad_con_main p {
+    padding-bottom: 5PX;
+}
+
+/* 脚 */
+.footer_black {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: -2350px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.pageall_footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+
+.foot_font a {
+    color: #fff;
+    padding: 0 10px 0 8px;
+    line-height: 33px;
+    font-family: "宋体";
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footer_logo {
+    margin-right: 5px;
+    position: relative;
+}
+
+.foot_font {
+    position: absolute;
+    left: 60px;
+    top: 0;
+}
+
+/* 跳转 */
+.batop {
+    position: fixed;
+    width: 60px;
+    height: 190px;
+    left: 50%;
+    margin-left: 595px;
+    z-index: 99;
+    bottom: 254px;
+    top: 200px;
+}
+
+.izl-rmenu {
+    width: 60px;
+    height: 61px;
+}
+
+.btn_top {
+    width: 60px;
+    height: 61px;
+    display: block;
+    background: #009746;
+}

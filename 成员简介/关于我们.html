@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    :root {
+        background-color: #2c3e50;
+        border-color: #7591AD;
+        text: color #34495e;
+        color1: #ec3e27;
+        color2: #fd79a8;
+        color3: #0984e3;
+        color4: #00b894;
+        color5: #fdcb6e;
+        color6: #e056fd;
+        color7: #bdc581;
+        a_border_color: #86a3b3;
+        h2_border_color: #8ea2b8;
+        font_color: #e8f6fd;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(background-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif, Arial, 'Microsoft Yahei';
+        position: relative;
+    }
+
+    .card {
+        flex-shrink: 0;
+        flex-grow: 0;
+        position: relative;
+        width: 300px;
+        height: 450px;
+        overflow: hidden;
+        margin: 20px;
+        background-color: var(border-color);
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 0 30px #2c2c2c;
+        color: var(--font_color)
+    }
+
+    .photo {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        border-radius: 0%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .photo::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #333, transparent);
+    }
+
+    .card:hover .photo::before {
+        display: none;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card:hover .photo {
+        width: 120px;
+        height: 120px;
+        top: 30px;
+        border-radius: 50%;
+        box-shadow: 50%;
+        box-shadow: 0 0 20px #111;
+    }
+
+    h1 {
+        position: absolute;
+        top: 380px;
+        transition: 0.5s;
+    }
+
+    .card:hover h1 {
+        position: absolute;
+        top: 170px;
+    }
+
+    /* 头 */
+
+    .index_dht {
+        width: 100%;
+        height: 60px;
+        background-color: #616060;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    */
+
+    /* 头板熊猫图片 */
+    .index_dht_div {
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+
+    /* 头板中间搜索部分 */
+    .index_head_ssuo {}
+
+    button,
+    input {
+        border: 0;
+        outline: none;
+    }
+
+    .index_head_ssuo {
+        position: absolute;
+        top: 0;
+        left: 300px;
+        margin: 0 60px;
+    }
+
+    .dingbussuo {
+        margin-top: 14px;
+        width: 300px;
+        height: 35px;
+    }
+
+    .index_head_ssuo>span>img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ssuo {
+        padding: 8px 5px;
+        position: absolute;
+        top: 14px;
+        left: 302px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 23px;
+    }
+
+    /* 头的右边 */
+    .index_dht_divs {
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+    }
+
+    .index_dht_div {
+        display: inline-block;
+        padding: 12px 15px;
+    }
+
+    .index_dht_div {
+        float: left;
+    }
+
+    /* 熊猫参观下拉的接口 */
+    .canguanxialajieko>ul {
+        /* display: none; */
+        margin-top: 2px;
+        background-color: transparent;
+        z-index: 99;
+    }
+
+    .canguanxialajieko>ul>li {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .index_dht_div:hover {
+        background-color: #343333;
+    }
+
+    /* 正常来说隐藏的下拉 */
+    .canguanxialajieko_ydxs {
+        display: none;
+        width: 114px;
+        height: 100px;
+        line-height: 30px;
+        text-align: center;
+        background-color: #343333
+    }
+
+    .canguanxialajieko_ydxs>li>a {
+        color: white;
+    }
+
+    .canguanxialajieko_ydxs>li:hover {
+        background-color: white;
+
+    }
+
+    .canguanxialajieko_ydxs>li>a:hover {
+        color: #343333
+    }
+
+    .canguanxialajieko_ydxs>li:nth-of-type(1) {
+        margin-top: 15px;
+    }
+
+    /* 身体 */
+    .thbody_card {
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .card {
+        float: left;
+    }
+</style>
+
+<body>
+    <!-- 头 -->
+    <div class="index_dht">
+        <!-- 头的左边logo -->
+        <div class=".index_logo">
+            <img src="../images/index_logo.png" alt="">
+        </div>
+        <!-- 头的中间搜索 -->
+        <div class="index_head_ssuo">
+            <form action="#" method="post" name="searchform" id="searchform">
+                <input type="text" name="dingbussuo" class="dingbussuo">
+                <input type="submit" value="搜索" class="ssuo">
+            </form>
+        </div>
+        <!-- 头的右边导航 -->
+        <div class="index_dht_divs">
+            <div class="index_dht_div">
+                <a href="../index.html">首页</a>
+            </div>
+            <div class="index_dht_div canguanxialajieko">
+                <ul>
+                    <li style="list-style: none;"><a href=" javascript:void(null)">熊猫参观▼</a></li>
+                    <ul class="canguanxialajieko_ydxs">
+                        <li>
+                            <a href="../movie/花花.mp4" target="_blank">花花</a>
+                        </li>
+                        <li>
+                            <a href="../movie/和叶.mp4" target="_blank">和叶</a>
+                        </li>
+                        <li>
+                            <a href="../movie/三太子.mp4" target="_blank">三太子</a>
+                        </li>
+                    </ul>
+                </ul>
+                <script>// 网页创意加十分
+                    var canguanxialajieko = document.querySelector('.canguanxialajieko');
+                    var canguanxialajieko_ydxs = document.querySelector('.canguanxialajieko_ydxs');
+                    canguanxialajieko.addEventListener('mouseover', function () {
+                        canguanxialajieko_ydxs.style.display = 'block';
+                    })
+                    canguanxialajieko.addEventListener('mouseout', function () {
+                        canguanxialajieko_ydxs.style.display = 'none';
+                    })
+                </script>
+            </div>
+            <div class="index_dht_div">
+                <a href="关于我们.html">小组成员</a>
+            </div>
+            <div class="index_dht_div">
+                <a href="../huiyuanzhuce.html">门票购买</a>
+            </div>
+        </div>
+    </div>
+    <!-- 身体 -->
+    <div class="thbody_card" style="position: absolute; top: 150px;left:auto; height: 500px;">
+        <div class="card">
+            <div class="photo">
+                <img src="文冰.jpg">
+            </div>
+            <h1>柯文冰</h1>
+            <h2>组长</h2>
+            <p>柯文冰，女，愿望不劳而获、坐享其成、无功受禄、一步登天</p>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="丽婷1.jpg">
+            </div>
+            <h1>林丽婷</h1>
+            <h2>组员</h2>
+            <p>林丽婷，女，性格善良温柔，喜欢shopping。
+            <p>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="舒文.jpg">
+            </div>
+            <h1>庞舒文</h1>
+            <h2>组员</h2>
+            <p>庞舒文，女，喜欢摸鱼，脾气暴躁。</p>
+        </div>
+    </div>
+</body>
+
+</html>
